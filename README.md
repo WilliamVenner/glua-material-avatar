@@ -2,11 +2,11 @@
 
 Simple script demonstrating how to download Steam avatars and generate a Material from them using clientside GLua.
 
-# Circle Avatars
+## Circle Avatars
 
 This code could be combined with [Circles!](https://github.com/SneakySquid/Circles) to produce a textured circular avatar.
 
-# Example
+### Example
 
 ```lua
 getAvatarMaterial(LocalPlayer():SteamID64(), function(mat)
@@ -14,7 +14,7 @@ getAvatarMaterial(LocalPlayer():SteamID64(), function(mat)
 end)
 ```
 
-# HUDPaint Example
+### HUDPaint Example
 
 ```lua
 local avatar, downloaded = ( Material("vgui/avatar_default") )
@@ -33,7 +33,7 @@ hook.Add("HUDPaint", "showMyAvatar", function()
 end)
 ```
 
-# VGUI Element Example
+### VGUI Element Example
 
 ```lua
 include("vgui-element.lua")

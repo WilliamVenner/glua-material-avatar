@@ -19,6 +19,23 @@ function PANEL:SetSteamID64(steamid64)
 	end
 end
 
+function PANEL:GetPlayer()
+	if self.m_SteamID64 == nil then
+		return NULL
+	else
+		-- This is slow. Don't call it every frame.
+		return player.GetBySteamID64(self.m_SteamID64)
+	end
+end
+
+function PANEL:GetMaterial()
+	return self.m_Material
+end
+
+function PANEL:GetSteamID64()
+	return self.m_SteamID64
+end
+
 function PANEL:Download()
 	assert(self.m_SteamID64 ~= nil, "Tried to download the avatar image of a nil SteamID64!")
 	getAvatarMaterial(self.m_SteamID64, function(mat)
