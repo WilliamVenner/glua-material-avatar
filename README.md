@@ -2,6 +2,10 @@
 
 Simple script demonstrating how to download Steam avatars and generate a Material from them using clientside GLua.
 
+This script is particularly stringent and applies a lot of defensive programming techniques.
+
+Avatar images are cached for 1 day and 1 server session.
+
 ## Circle Avatars
 
 This code could be combined with [Circles!](https://github.com/SneakySquid/Circles) to produce a textured circular avatar.
