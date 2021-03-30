@@ -1,4 +1,4 @@
-local AVATAR_IMAGE_CACHE_EXPIRES = 86400
+local AVATAR_IMAGE_CACHE_EXPIRES = 86400 -- 1 day, in seconds
 
 local function getAvatarMaterial(steamid64, callback)
 	-- First, check the cache to see if this avatar has already been downloaded.
