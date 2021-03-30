@@ -6,7 +6,9 @@ Simple script demonstrating how to download Steam avatars and generate a Materia
 
 This code could be combined with [Circles!](https://github.com/SneakySquid/Circles) to produce a textured circular avatar.
 
-### Example
+## Examples
+
+### Basic Example
 
 ```lua
 getAvatarMaterial(LocalPlayer():SteamID64(), function(mat)
