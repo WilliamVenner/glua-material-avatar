@@ -7,7 +7,7 @@ local function getAvatarMaterial(steamid64, callback)
 	local fallback
 	if os.time() - file.Time("avatars/" .. steamid64 .. ".png", "DATA") > AVATAR_IMAGE_CACHE_EXPIRES then
 		fallback = Material("../data/avatars/" .. steamid64 .. ".png", "smooth")
-	elseif os.time() - file.Exists("avatars/" .. steamid64 .. ".jpg", "DATA") > AVATAR_IMAGE_CACHE_EXPIRES then
+	elseif os.time() - file.Time("avatars/" .. steamid64 .. ".jpg", "DATA") > AVATAR_IMAGE_CACHE_EXPIRES then
 		fallback = Material("../data/avatars/" .. steamid64 .. ".jpg", "smooth")
 	end
 
